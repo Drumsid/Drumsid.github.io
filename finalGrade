@@ -1,6 +1,6 @@
 <script>
-const exam = 94;
-const projects = 11;
+//const exam = 94;
+//const projects = 11;
 
 const finalGrade = (exam, projects) => {
 	 if(exam > 90 || projects > 10){
@@ -13,7 +13,7 @@ const finalGrade = (exam, projects) => {
      	return 0;
      }
 };
-document.write (finalGrade());
+document.write (finalGrade(98, 13));
 
 
 /*Реализуйте функцию finalGrade, которая вычисляет итоговую оценку студента на основе двух параметров: оценки за экзамен и количества законченных проектов.
