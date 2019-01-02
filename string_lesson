@@ -1,1 +1,42 @@
+// мое решение
+const reverse = (str) => {
+    let i = str.length - 1;
+   let result = '';
 
+    while(i > (-1)) {
+       result = result + str[i];
+      i = i - 1;
+    }
+   return result;
+};
+
+document.write(reverse('Helo, World!'));
+
+
+
+/*  
+reverse.js
+Реализуйте функцию reverse, которая переворачивает строку. Например:
+
+reverse('hello, world!'); // !dlrow ,olleh
+Подсказки
+Длина строки str находится так: str.length
+*/
+
+
+
+//решение учителя
+// BEGIN
+// Visualize Execution: https://goo.gl/8pNRk2
+const reverse = (str) => {
+    let i = str.length - 1;
+    let result = '';
+  
+    while (i >= 0) {
+      result = result + str[i];
+      i = i - 1;
+    }
+  
+    return result;
+  };
+  // END
