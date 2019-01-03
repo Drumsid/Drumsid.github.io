@@ -1,0 +1,43 @@
+// мое решение
+
+const isPrime = (num) => {
+	for (let counter = 2; num >= counter || num <= 1; counter++) {
+    	if (num <= 1) {
+        	return false;
+        } else if (num % counter == 0 && num > counter) {
+        	return false;
+        } else if (num % counter == 0 && num == counter) {
+        	return true;
+        }
+    }
+};
+document.write(isPrime(-2));
+
+/*Напишите функцию isPrime. Она принимает число и возвращает true, если число является простым, и false в ином случае.
+
+Простое число — целое положительное число, имеющее ровно два различных натуральных делителя — единицу и самого себя. Например, 7 — простое число, потому что делится без остатка только на 1 и на
+ себя. 2017 — другое простое число.
+
+Используйте цикл for и арифметические шорткаты.
+
+isPrime(1);     // false
+isPrime(7);     // true
+isPrime(10);    // false
+(Число 1 не считаем простым).*/
+
+// решение учителя
+// BEGIN
+const isPrime = (number) => {
+    if (number < 2) {
+      return false;
+    }
+  
+    for (let i = 2; i < number; i += 1) {
+      if (number % i === 0) {
+        return false;
+      }
+    }
+  
+    return true;
+  };
+  // END
